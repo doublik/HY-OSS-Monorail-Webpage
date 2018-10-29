@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+
+<html lang="kr">
+  <head>
+    <title>OSS MONORAIL</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <script src="http://code.jquery.com/jquery-3.2.0.min.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- HEADER -->
+      <div class="header">
+          <div class="banner">
+            <div>
+              <a href="index.html">
+                <img src="img/logo.png" id="logo">
+              </a>
+            </div>
+            <div id="group_name">
+                <h3><span style="color: #c9c9c9">TEAM MONORAIL</span></h3>
+            </div>
+          </div>
+          <div class="navbar">
+            <div class="area_nav">
+              <ul class="nav_list">
+                <li class="nav_item">
+                  <a href="introduction.html">
+                    <span class="nav_item_name">
+                      INTRODUCTION
+                    </span>
+                  </a>
+                </li>
+                <li class="nav_item">
+                    <a href="history.html">
+                      <span class="nav_item_name">
+                        HISTORY
+                      </span>
+                    </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    
+        <!-- CONTAINER -->
+        <div class="container">
+          <div class="topic_list">
+            <ul class="topics">
+              <!-- 리스트를 적으세요 -->
+              <li class="topic_item_t">
+                <div class="label_t">
+                  <span>TITLE</span>
+                </div>
+              </li>
+              <li class="topic_item">
+                <div class="label">
+                    <a href="#contents" class="topic_title" id="1"><span>소개1</span></a>
+                </div>
+              </li>
+              <li class="topic_item">
+                <div class="label">
+                    <a href="#contents" class="topic_title" id="2"><span>소개2</span></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="main_text">
+            <div id="contents"></div>
+          </div>
+        </div>
+        <script>
+          $(document).ready(function() {
+            $(".topics>.topic_item:first>div").removeClass("label").addClass("active_label");
+            $(".topics>.topic_item:first>div>a").removeClass("topic_title").addClass("active_title");
+            $("#contents").load("introduction/1.html");
+          });
+        </script>
+        <script>
+          $(".topic_title").click(function() {
+            $(".active_label").removeClass("active_label").addClass("label");
+            $(".active_title").removeClass("active_title").addClass("topic_title");
+            $("#contents").load("introduction/" + this.id + ".html");
+            $(this).removeClass("topic_title").addClass("active_title");
+            $(".label:has(.active_title)").removeClass("label").addClass("active_label");
+          });
+        </script>
+    </div>
+  </body>
+</html>
