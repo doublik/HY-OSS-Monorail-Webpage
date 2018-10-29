@@ -62,7 +62,7 @@ ol, ul {
 
 .area_nav {
     position: relative;
-    width: 247px;
+    width: 187px;
     overflow: hidden;
 }
 
@@ -97,7 +97,9 @@ ol, ul {
 .container .topic_list {
     width: 250px;
     float: left;
-    border: 1px solid #d1d8e4;
+    border-left: 1px solid #d1d8e4;
+    border-right: 1px solid #d1d8e4;
+    border-bottom: 1px solid #d1d8e4;
 }
 
 .container .topics {
@@ -105,12 +107,13 @@ ol, ul {
 }
 
 .topic_item_t>.label_t {
-    font-size: 25px;
+    font-size: 24px;
     font-weight: bold;
-    color: #474747;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    border-bottom: 2px solid #d1d8e4;
+    color: darkcyan;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-top: 1px solid #d1d8e4;
+    border-bottom: 1px solid #d1d8e4;
 }
 
 .topic_item>.label:hover {
@@ -123,7 +126,7 @@ ol, ul {
     padding-bottom: 7px;
     display: block;
     color: #474747;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     text-decoration: none;
 }
@@ -156,7 +159,7 @@ ol, ul {
     padding-bottom: 7px;
     display: block;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 16px; /*18*/
     font-weight: bold;
     text-decoration: none;
 }
