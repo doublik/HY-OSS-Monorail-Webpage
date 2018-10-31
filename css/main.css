@@ -6,7 +6,7 @@ body, div, h1, h2, h3, h4, h5, h6, ul, ol, li, p, a {
     margin: 0 auto;
     padding: 0;
     font-family: 'Nanum Gothic', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 ol, ul {
@@ -62,7 +62,7 @@ ol, ul {
 
 .area_nav {
     position: relative;
-    width: 187px;
+    width: 124px;
     overflow: hidden;
 }
 
@@ -85,6 +85,7 @@ ol, ul {
 
 .nav_item .nav_item_name {
     font-weight: bold;
+    font-size:16px;
 }
 
 .container {
@@ -171,4 +172,16 @@ ol, ul {
 .go_up>a, .go_up>a:hover, .before_page>a, .before_page>a:hover, .after_page>a, .after_page>a:hover {
     text-decoration: none;
     color: black;
+}
+
+.before_page>a {
+    font-size: 16px;
+}
+
+.go_up>a {
+    font-size: 16px;
+}
+
+.after_page>a {
+    font-size: 16px;
 }

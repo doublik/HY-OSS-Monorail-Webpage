@@ -14,112 +14,112 @@
     <div class="wrap">
       <!-- HEADER -->
       <div class="header">
-          <div class="banner">
-            <div>
-              <a href="index.html">
-                <img src="img/logo.png" id="logo">
-              </a>
-            </div>
-            <div id="group_name">
-                <h3><span style="color: #c9c9c9">TEAM MONORAIL</span></h3>
-            </div>
+        <div class="banner">
+          <div>
+            <a href="index.html">
+              <img src="img/logo.png" id="logo">
+            </a>
           </div>
-          <div class="navbar">
-            <div class="area_nav">
-              <ul class="nav_list">
-                <li class="nav_item">
-                  <a href="history.html">
-                    <span class="nav_item_name">
-                      역사
-                    </span>
-                  </a>
-                </li>
-                <li class="nav_item">
-                  <a href="introduction.html">
-                    <span class="nav_item_name">
-                      소개
-                    </span>
-                  </a>
-                </li>
-                <li class="nav_item">
-                  <a href="oss.html">
-                    <span class="nav_item_name">
-                      OSS
-                    </span>
-                  </a>
-                </li>
-              </ul>
-            </div>
+          <div id="group_name">
+              <h3><span style="color: #c9c9c9">TEAM MONORAIL</span></h3>
           </div>
         </div>
-    
-        <!-- CONTAINER -->
-        <div class="container">
-          <div class="topic_list">
-            <ul class="topics">
-              <!-- 리스트를 적으세요 -->
-              <li class="topic_item_t">
-                <div class="label_t">
-                  <span>HISTORY</span>
-                </div>
+        <div class="navbar">
+          <div class="area_nav">
+            <ul class="nav_list">
+              <li class="nav_item">
+                <a href="introduction.html">
+                  <span class="nav_item_name">
+                    소개
+                  </span>
+                </a>
               </li>
-              <li class="topic_item">
-                <div class="label">
-                  <a href="#logo" class="topic_title" id="1"><span>1980년대 이전</span></a>
-                </div>
+              <li class="nav_item">
+                <a href="history.html">
+                  <span class="nav_item_name">
+                    역사
+                  </span>
+                </a>
               </li>
-              <li class="topic_item">
-                <div class="label">
-                  <a href="#logo" class="topic_title" id="2"><span>자유 소프트웨어의 하락</span></a>
-                </div>
-              </li>
-              <li class="topic_item">
-                <div class="label">
-                  <a href="#logo" class="topic_title" id="3"><span>1980년대 이후</span></a>
-                </div>
-              </li>
-              <li class="topic_item">
-                <div class="label">
-                  <a href="#logo" class="topic_title" id="4"><span>자유소프트웨어 운동의 시작</span></a>
-                </div>
-              </li>
-              <li class="topic_item">
-                <div class="label">
-                  <a href="#logo" class="topic_title" id="5"><span>리눅스</span></a>
-                </div>
-              </li>
-              <li class="topic_item">
-                <div class="label">
-                  <a href="#logo" class="topic_title" id="6"><span>오픈소스 출시</span></a>
-                </div>
-              </li>
-              <li class="topic_item">
-                <div class="label">
-                  <a href="#logo" class="topic_title" id="7"><span>2000년대</span></a>
-                </div>
-              </li>
+              <!---<li class="nav_item">
+                <a href="oss.html">
+                  <span class="nav_item_name">
+                    OSS
+                  </span>
+                </a>
+              </li>--->
             </ul>
           </div>
-          <div class="main_text">
-            <div id="contents"></div>
-          </div>
         </div>
-        <script>
-          $(document).ready(function() {
-            $(".topics>.topic_item:first>div").removeClass("label").addClass("active_label");
-            $(".topics>.topic_item:first>div>a").removeClass("topic_title").addClass("active_title");
-            $("#contents").load("history/1.html");
-          });
-        </script>
-        <script>
-          $(".topic_title").click(function() {
-            $(".active_label").removeClass("active_label").addClass("label");
-            $(".active_title").removeClass("active_title").addClass("topic_title");
-            $("#contents").load("history/" + this.id + ".html");
-            $(this).removeClass("topic_title").addClass("active_title");
-            $(".label:has(.active_title)").removeClass("label").addClass("active_label");
-          });
-        </script>
+      </div>
+    
+      <!-- CONTAINER -->
+      <div class="container">
+        <div class="topic_list">
+          <ul class="topics">
+            <!-- 리스트를 적으세요 -->
+            <li class="topic_item_t">
+              <div class="label_t">
+                <span>HISTORY</span>
+              </div>
+            </li>
+            <li class="topic_item">
+              <div class="label">
+                <a href="#logo" class="topic_title" id="1"><span>1980년대 이전</span></a>
+              </div>
+            </li>
+            <li class="topic_item">
+              <div class="label">
+                <a href="#logo" class="topic_title" id="2"><span>자유 소프트웨어의 하락</span></a>
+              </div>
+            </li>
+            <li class="topic_item">
+              <div class="label">
+                <a href="#logo" class="topic_title" id="3"><span>1980년대 이후</span></a>
+              </div>
+            </li>
+            <li class="topic_item">
+              <div class="label">
+                <a href="#logo" class="topic_title" id="4"><span>자유소프트웨어 운동의 시작</span></a>
+              </div>
+            </li>
+            <li class="topic_item">
+              <div class="label">
+                <a href="#logo" class="topic_title" id="5"><span>리눅스</span></a>
+              </div>
+            </li>
+            <li class="topic_item">
+              <div class="label">
+                <a href="#logo" class="topic_title" id="6"><span>오픈소스 출시</span></a>
+              </div>
+            </li>
+            <li class="topic_item">
+              <div class="label">
+                <a href="#logo" class="topic_title" id="7"><span>2000년대</span></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="main_text">
+          <div id="contents"></div>
+        </div>
+      </div>
+      <script>
+        $(document).ready(function() {
+          $(".topics>.topic_item:first>div").removeClass("label").addClass("active_label");
+          $(".topics>.topic_item:first>div>a").removeClass("topic_title").addClass("active_title");
+          $("#contents").load("history/1.html");
+        });
+      </script>
+      <script>
+        $(".topic_title").click(function() {
+          $(".active_label").removeClass("active_label").addClass("label");
+          $(".active_title").removeClass("active_title").addClass("topic_title");
+          $("#contents").load("history/" + this.id + ".html");
+          $(this).removeClass("topic_title").addClass("active_title");
+          $(".label:has(.active_title)").removeClass("label").addClass("active_label");
+        });
+      </script>
     </div>
   </body>
 </html>
